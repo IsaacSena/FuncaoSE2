@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 3</title>
+</head>
+<body>
+    
+    <h1>Prémios aos funcionarios</h1>
+    <p>Nome funcionário: <span id="nf"></span></p>
+    <p>Valor a ser alcançado: <span id="va"></span></p>
+    <p>Quanto o funcionário vendeu: <span id="qfv"></span></p>
+    <p>Ele conquistou ou não: <span id="ecn"></span></p>
+
+    <script>
+
+        let nome = prompt("Digite o nome do funciónario")
+        let metas = Number(prompt("Digite o valor a ser alcançado"))
+        let vendafuncionario = Number(prompt("Digite o valor de vendas do funciónario"))
+        let resultado 
+
+        if(vendafuncionario > metas){
+            resultado = "Ganhou!"
+        }else{
+            resultado = "Não Ganhou"
+        }
+        
+        document.getElementById("nf").innerHTML = nome;
+        document.getElementById("va").innerHTML = metas;
+        document.getElementById("qfv").innerHTML = vendafuncionario;
+        document.getElementById("ecn").innerHTML = resultado;
+
+
+
+    </script>
+
+
+
+</body>
+</html>
